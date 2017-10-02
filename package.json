@@ -11,7 +11,7 @@
     "build": "shx rm -rf dist/* && rollup -c",
     "dev": "rollup -c -w",
     "lint": "eslint src/*.js test/*.js",
-    "prepublish": "npm run lint && npm test"
+    "prepare": "npm run lint && npm test"
   },
   "files": [
     "src",
