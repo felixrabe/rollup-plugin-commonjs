@@ -11,7 +11,11 @@
     "build": "shx rm -rf dist/* && rollup -c",
     "dev": "rollup -c -w",
     "lint": "eslint src/*.js test/*.js",
-    "prepare": "npm run lint && npm test"
+    "prepare": "npm run lint && npm test",
+    "publish-felixrabe": "gitpkg publish"
+  },
+  "gitpkg": {
+    "registry": "https://github.com/felixrabe/rollup-plugin-commonjs.git"
   },
   "files": [
     "src",
@@ -27,6 +31,7 @@
   },
   "devDependencies": {
     "eslint": "^4.5.0",
+    "gitpkg": "^1.0.0-beta.1",
     "locate-character": "^2.0.1",
     "mocha": "^3.5.0",
     "require-relative": "^0.8.7",
